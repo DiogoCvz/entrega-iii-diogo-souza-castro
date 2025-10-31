@@ -13,5 +13,4 @@ Este projeto implementa uma SPA básica com templates em JavaScript, roteamento 
 2. Navegue entre as rotas: `#/`, `#/projects`, `#/contact`.
 3. No formulário de contato, tente enviar valores inválidos para ver as mensagens de validação.
 
-## Entrega
-- Organize as pastas e faça o upload no seu repositório público no GitHub.
+
