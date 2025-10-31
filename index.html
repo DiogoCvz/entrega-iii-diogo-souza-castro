@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Entrega III — Diogo Souza Castro</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="container nav">
+      <a href="#/" class="brand">Diogo Castro</a>
+      <ul class="nav-list">
+        <li><a href="#/">Início</a></li>
+        <li><a href="#/projects">Projetos</a></li>
+        <li><a href="#/contact">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="app" class="container"></main>
+
+  <template id="tpl-home">
+    <section class="hero card">
+      <h1>Entrega III — SPA com JavaScript</h1>
+      <p>Aplicação demonstrando roteamento, templates, validação e storage.</p>
+    </section>
+  </template>
+
+  <template id="tpl-projects">
+    <section>
+      <h2>Projetos</h2>
+      <div id="projects-list"></div>
+    </section>
+  </template>
+
+  <template id="tpl-contact">
+    <section>
+      <h2>Contato</h2>
+      <form id="contact-form" novalidate>
+        <label>Nome<br><input name="nome" required minlength="3"></label>
+        <label>Email<br><input name="email" type="email" required></label>
+        <label>Mensagem<br><textarea name="mensagem" required minlength="10"></textarea></label>
+        <div class="form-actions"><button type="submit" class="btn primary">Enviar</button></div>
+      </form>
+    </section>
+  </template>
+
+  <script type="module" src="../js/app.js"></script>
+</body>
+</html>
